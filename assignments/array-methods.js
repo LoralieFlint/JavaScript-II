@@ -57,8 +57,8 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 // The event director needs both the first and last names of each runner for their running bibs.  
 // Combine both the first and last names into a new array called fullName. 
 let fullName = [];
-runners.forEach(function(element) {
-    console.log(element.first_name, element.last_name);
+runners.forEach(function(arr) {
+    fullName.push(`${arr.first_name} ${arr.last_name}`);
   });
 console.log(fullName);
 
@@ -87,8 +87,9 @@ const ticketPriceTotal = runners.reduce((
 console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
-// Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme. 
-//  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
+// Now that you have used .forEach(), .map(), .filter(), and .reduce().  
+// I want you to think of potential problems you could solve given the data set and the 5k fun run theme. 
+// Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
 

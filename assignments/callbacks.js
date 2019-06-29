@@ -22,8 +22,6 @@ this problem:
 */
 
 // getLength passes the length of the array into the callback.
-const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
-
 function getLength(arr, cb) {
      cb (arr.length);
   }
@@ -31,7 +29,6 @@ function getLength(arr, cb) {
         console.log(number);
   });
   
-
  // last passes the last item of the array into the callback.
  function last(arr, cb) {
   cb (arr [arr.length -1]);
@@ -40,8 +37,6 @@ function getLength(arr, cb) {
     console.log(word);
   });
 
-
-
   // sumNums adds two numbers (x, y) and passes the result to the callback.
   function sumNums(x, y, cb) {
     cb (x + y);
@@ -49,8 +44,6 @@ function getLength(arr, cb) {
     sumNums (2,4,(sum) => {
       console.log(sum);
     });
-
-
 
 
   // multiplyNums multiplies two numbers and passes the result to the callback.
